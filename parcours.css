@@ -1,0 +1,26 @@
+/* parcours.css */
+.page-header {
+    text-align: center; padding: 70px 20px;
+    background: linear-gradient(135deg, #102040, #1e3c72); color: white;
+    border-radius: 0 0 40px 40px;
+}
+.container { width: 90%; max-width: 900px; margin: 50px auto; display: flex; flex-direction: column; gap: 35px; }
+
+.modern-card {
+    background: white; border-radius: 20px; padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 1px solid #e3e8ef;
+    position: relative; transition: 0.3s;
+}
+.modern-card:hover { transform: translateY(-5px); }
+.modern-card::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4);
+    border-radius: 20px 20px 0 0;
+}
+.date { font-size: 0.95rem; color: #64748b; margin-bottom: 15px; }
+
+.badge-group { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.badge {
+    padding: 8px 16px; background: #f3f6ff; color: #1c2b4a;
+    border-radius: 30px; border: 1px solid #d7ddf0; font-size: 0.9rem;
+}

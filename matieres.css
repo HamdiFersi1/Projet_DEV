@@ -1,0 +1,28 @@
+/* matieres.css */
+.page-header {
+    text-align: center; padding: 70px 20px;
+    background: linear-gradient(135deg, #102040, #1e3c72); color: white;
+    border-radius: 0 0 40px 40px;
+}
+.container {
+    width: 90%; max-width: 1200px; margin: 50px auto;
+    display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;
+}
+
+.modern-card {
+    background: white; border-radius: 20px; width: 320px; padding: 25px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08); border: 1px solid #e3e8ef;
+    position: relative; transition: 0.3s;
+}
+.modern-card:hover { transform: translateY(-6px); }
+.modern-card::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4);
+    border-radius: 20px 20px 0 0;
+}
+
+.badge-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.badge {
+    padding: 7px 14px; border-radius: 30px; font-size: 0.9rem;
+    border: 1px solid #d7ddf0; background: #f3f6ff; color: #1c2b4a;
+}

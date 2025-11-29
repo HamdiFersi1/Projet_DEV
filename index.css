@@ -1,0 +1,44 @@
+/* index.css */
+.header-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #102040, #1e3c72);
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.header-hero h1 { font-size: 3rem; margin-bottom: 12px; }
+.header-hero p { font-size: 1.2rem; color: #d7e2ff; }
+
+.container { width: 90%; max-width: 1200px; margin: 50px auto; display: flex; flex-direction: column; gap: 50px; }
+
+.modern-card {
+    background: white; border-radius: 20px; padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); border: 1px solid #e3e8ef;
+    position: relative; transition: 0.3s;
+}
+.modern-card:hover { transform: translateY(-5px); }
+.modern-card::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Barres de compétences (Index) */
+.skill-bar {
+    background: #e3e8ef; border-radius: 20px; height: 18px;
+    overflow: hidden; margin-top: 5px; margin-bottom: 15px;
+}
+.skill-bar span {
+    display: block; height: 100%; background: linear-gradient(90deg, #6366f1, #3b82f6);
+}
+
+/* Cartes liens (Index) */
+.d-flex { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; }
+.modern-link-card {
+    background: white; padding: 35px 25px; border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); text-align: center;
+    width: 260px; transition: 0.3s; display: block; color: inherit;
+}
+.modern-link-card:hover { transform: translateY(-8px); }
+.modern-link-card i { font-size: 2.8rem; color: #2563eb; display: block; margin-bottom: 15px; }
